@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.bg-image
+{
+    /***the image used***/
+    background-image: url(../blue.png);
+    /***blur effect***/
+    filter: blur(10px);
+    -webkit-filter: blur(5px);
+    /***full hight***/
+    height: -webkit-fill-available;
+    /***Center and scale the image nicely***/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/**** Now Position the caluclator in the middle of the image */
+.main
+{
+    /* Fallback color */
+    background-color: rgb(0,0,0); 
+    /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 2px solid #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    height: 400px;
+    padding: 3pt;
+    text-align: center;
+}
+.button
+{
+    width: 45pt;
+    height: 45pt;
+    font-size: 23pt;
+    margin: 3pt;
+    cursor: pointer;
+    background: #0c0383;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+.textview
+{
+    width: 200pt;
+    margin: 4pt;
+    font-size: 15pt;
+    padding: 3pt;
+    border: none;
+    color: #130057;   
+}
